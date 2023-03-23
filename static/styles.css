@@ -42,11 +42,12 @@ body {
 }
 
 #conteudo-principal {
-    margin-top: 15%;
+    margin-top: 5%;
     font-family: Poppins;
     font-size: 36px;
     text-align: left;
-    margin-left: 5%
+    margin-left: 5%;
+    margin-right: 10%;
 }
 
 #conteudo-principal p {
@@ -71,8 +72,18 @@ body {
     display: none;
 }
 
-.buttons a {
+.welcome-buttons a {
+    margin: 0;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #17d4ff;
+    padding: 0.5rem;
+    display: flex;
+    border-radius: 3rem;
+}
 
+.welcome-buttons a:hover {
+    background-color: #15afd2;
 }
 
 @media (max-width: 600px) {

@@ -155,10 +155,11 @@ input[type="submit"]:hover {
     border: 1px solid #15afd2;
     border-radius: 2rem;
     display: block;
-    height: 540px;
+    height: 580px;
     margin: auto;
+    padding: auto;
     margin-bottom: 2rem;
-    width: 540px;
+    width: 580px;
     text-align: center;
 }
 
@@ -183,5 +184,20 @@ input[type="submit"]:hover {
         margin: 0.6rem;
         padding: 0;
     }    
+
+    
+    #novidade1, #novidade2 {
+        border: 1px solid #15afd2;
+        border-radius: 2rem;
+        display: block;
+        height: auto;
+        margin: auto;
+        padding: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        width: auto;
+        text-align: center;
+    }
 
 }

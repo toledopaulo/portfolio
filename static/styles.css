@@ -9,10 +9,32 @@ body {
     background: #050b0b;
 }
 
+.projetos {
+    display: block;
+    text-align: center;
+}
+
+.projetos h1{
+    font-size: 24px;
+}
+
+.projetos h2 {
+    color:#16caf2 !important;
+    margin-top: -1rem;
+}
+
 .subtitle {
     color: #828282 !important;
     font-size: 20px !important;
     font-family: 'Courier New', Courier, monospace !important;
+}
+
+#resumo {
+    color: #828282 !important;
+    font-size: 20px !important;
+    margin-top: 1rem;
+    /* font-family: 'Courier New', Courier, monospace !important; */
+    
 }
 
 #topbar {
@@ -29,8 +51,17 @@ body {
     padding: 0.5rem;
 }
 
+.view-btn {
+    border: solid 1px #16caf2;
+    border-radius: 2rem;
+    width: 100px;
+    height: 30px;
+}
 
 
+.view-btn:hover {
+    background-color:#17d4ff;
+}
 .menu-items {
     list-style: none;
     display: flex;
@@ -42,12 +73,9 @@ body {
 }
 
 #conteudo-principal {
-    margin-top: 5%;
     font-family: Poppins;
     font-size: 36px;
-    text-align: left;
-    margin-left: 5%;
-    margin-right: 10%;
+    text-align: center;
 }
 
 #conteudo-principal p {
@@ -56,20 +84,69 @@ body {
     margin: 0;
 }
 
-#conteudo-principal img {
-    margin: 0;
-    float: left;
+#welcome-img {
+    margin-top: 5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 100%;
 }
 
-#bem-vindo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#minha-foto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+}
+
+#entre-em-contato {
+    text-align: center;
+}
+
+input {
+    background-color: #303030;
+    border-radius: 2rem;
+    color: white;
+    border: none;
+}
+
+input[type="submit"] {
+    font-size: 20px;
+    height: 40px;
+    width: 80px;
+    font-family: Poppins;
+    border: 1px solid #15afd2;
+    border-radius: 2rem;
+    background-color: #050b0b;;
+}
+
+input[type="submit"]:hover {
+    background-color: #15afd2;
+}
+
+#habilidades h1{
+
+    text-align: center;
+}
+
+#habilidades h2 {
+    margin: 1rem;
+}
+
+#habilidades ul {
+    margin: 1rem;
+    font-size: 24px;
 }
 
 #menu-btn {
     display: none;
+}
+
+#sobre-mim {
+    width: 100px;
+    height: 20px;
+    align-items: center;
+    text-align: center;
 }
 
 .welcome-buttons a {
@@ -77,9 +154,8 @@ body {
     text-decoration: none;
     font-size: 16px;
     border: 1px solid #17d4ff;
-    padding: 0.5rem;
-    display: flex;
     border-radius: 3rem;
+    padding: 0.8rem;
 }
 
 .welcome-buttons a:hover {
@@ -87,11 +163,12 @@ body {
 }
 
 @media (max-width: 600px) {
-    #menu-btn {
-        display: block;
-    }
-
     .menu-items {
-        display: none;
-    }
+        list-style: none;
+        display: flex;
+        gap: 0rem;
+        margin: 0.6rem;
+        padding: 0;
+    }    
+
 }

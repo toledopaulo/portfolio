@@ -149,6 +149,19 @@ input[type="submit"]:hover {
     text-align: center;
 }
 
+
+
+#novidade1, #novidade2 {
+    border: 1px solid #15afd2;
+    border-radius: 2rem;
+    display: block;
+    height: 540px;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 540px;
+    text-align: center;
+}
+
 .welcome-buttons a {
     margin: 0;
     text-decoration: none;

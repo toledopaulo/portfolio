@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paulo Toledo - Portfolio</title>
+    <!-- nav horizontal -->
     <link rel="stylesheet" href="../static/styles.css">
+    <!--  -->
+    <!-- nav vertical -->
+    <!-- <link rel="stylesheet" href="../static/styles2.css">  -->
+    <!--  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
@@ -22,32 +27,32 @@
                 <li><a href="./contato.html">Contato</a></li>
             </ul>
         </nav>
-        <h1 style="text-align: center;">Contato</h1>
+        <h1 style="text-align: center;">Entre em contato 📞</h1>
+        <div id="my-socials">
+            <h2>Redes Sociais</h2>
+            <a href="https://www.linkedin.com/in/paulo-afonso-toledo/">Linkedin <img src="../static/linkedin.png" height="12px" width="12px"></a>
+            <a href="https://github.com/toledopaulo/">Github <img src="../static/github.webp" height="16px" width="16px"></a>
+        </div>
         <div id="entre-em-contato">
-            <form id="contato">  
-                <label>Nome</label>
-                <br>
-                <input name="name" type="text">
-                <br>
-                <label>E-mail</label>
-                <br>
-                <input name="email" type="email">
-                <br>
-                <label>Assunto</label>
-                <br>
-                <input type="text">
-                <br>
-                <label>Mensagem</label>
-                <br>
-                <input name="comment" type="text">
-                <br>
-                <br>
-                <a href="mailto:paulo.aff1803@gmail.com" >Enviar</a>
-            </form>
+            <form id="contato" action="mailto:paulo.aff1803@gmail.com" method="get" enctype="text/plain">
+                <h2>Manda um email</h2>
+                Nome<br>
+                <input type="text" name="email" placeholder="Seu nome"><br>
+                E-mail<br>
+                <input type="email" name="email" placeholder="Seu e-mail"><br>
+                Assunto<br>
+                <input type="text" name="subject" placeholder="Assunto"><br>
+                Mensagem<br>
+                <textarea name="body" rows="5" cols="20" placeholder="Sua mensagem" style="resize: none;"></textarea><br><br>
+                <input type="submit" value="Enviar">
+              </form>
         </div>
     </header>
     <script>
-        document.get
+        function generate_mailto() {
+            let sendBtn = document.getElementById("send-email")
+            sendBtn.onclick()
+        }
     </script>
 </body>
 </html>

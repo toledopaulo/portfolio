@@ -40,18 +40,30 @@ body {
 #topbar {
     font-family: Poppins;
     border-bottom: 1px solid #17d4ff;
-    height: 50px;
     /* padding: 0.5rem; */
-    align-items: center;
 }
 
 #topbar a {
+    text-align: center;
     text-decoration: none;
     display: block;
-    margin: auto;
+    margin: 0;
+    padding: 0.2rem;
     font-size: 14px;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
 }
+
+.menu-items {
+    list-style: none;
+    display: block;
+    gap: 1rem;
+}
+
+.menu-items a:hover {
+    color:#17d4ff;
+}
+
+
 
 .view-btn {
     border: solid 1px #16caf2;
@@ -64,15 +76,7 @@ body {
 .view-btn:hover {
     background-color:#17d4ff;
 }
-.menu-items {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
 
-.menu-items a:hover {
-    color:#17d4ff;
-}
 
 #conteudo-principal {
     font-family: Poppins;
@@ -151,8 +155,8 @@ input[type="submit"]:hover {
     height: 30px;
     text-align: center;
     margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
     margin-bottom: auto;
 }
 
@@ -239,13 +243,12 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 600px) {
+
     .menu-items {
         list-style: none;
-        display: flex;
-        gap: 0rem;
-        margin-top: 1rem;
-        padding: 0;
-    }    
+        display: block;
+        gap: 1rem;
+    }
 
     
     #novidade1, #novidade2 {
